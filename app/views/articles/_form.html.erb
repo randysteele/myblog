@@ -12,27 +12,31 @@
     </div>
   <% end %>
 
-  <p>
-  <%= f.label :tags %><br />
-  <%= f.text_field :tag_list %>
-  </p>
+  <div class="card">
+   <div class="card-body">
+    <div class="mb-3">
+    <%= f.label :tags %><br>
+    <%= f.text_field :tag_list %>
 
-  <div>
+  <div class="mb-3">
     <%= f.label :title, style: "display: block" %>
     <%= f.text_field :title %>
   </div>
 
-  <div>
+  <div class="mb-3">
     <%= f.label :description, style: "display: block" %>
-    <%= f.text_area :description %>
+    <%= f.text_area :description, cols: 100, rows: 10 %>
   </div>
 
-  <p>
+  <div class="mb-3">
   <%= f.label :image, "Attach an Image" %><br />
   <%= f.file_field :image %>
-</p>
+</div>
 
-  <div>
-    <%= f.submit %>
-  </div>
+<div>
+<%= f.submit %>
+</div>
+</div>
+</div>
+</div>
 <% end %>

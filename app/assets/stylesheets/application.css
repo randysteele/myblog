@@ -13,3 +13,23 @@
  *= require_tree .
  *= require_self
  */
+
+body {
+    margin: 5px;
+    padding: 20px;
+    font-family: 'Oswald', sans-serif;
+}
+
+ h1 {
+    text-align: center;
+    color: blue;
+    letter-spacing: .5rem;
+ }
+ 
+ #articles {
+    text-align: justify;
+    color:dimgray;
+    font-weight: 600;
+    font-size: larger;
+    flex-wrap: wrap;
+ }
