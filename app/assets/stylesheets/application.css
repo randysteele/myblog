@@ -21,15 +21,56 @@ body {
 }
 
  h1 {
+    font-size: 4rem;
+    background-color: #ff8177;
+    background-image: linear-gradient(to top, #ff0844 0%, #ffb199 100%);
+    background-size: 100%;
     text-align: center;
-    color: blue;
-    letter-spacing: .5rem;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
  }
  
  #articles {
-    text-align: justify;
-    color:dimgray;
+    display:flexbox;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-self: center;
+    margin: 0 auto;
+    height: 90vh;
+    width: 100%;
+    max-width: 1300px;
+    padding: 0 50px;    
+    
+ }
+
+ a {
+    padding: 45px;
+    
+ }
+
+ a:hover {
+    color: pink;
+    font-size: 30px;
+    transition: 0.4s ease-in;
+ }
+
+ .card-body {
+    padding: 30px;
+    margin: 30px;
+
+ }
+
+ p {
+    color:darkslategray;
     font-weight: 600;
-    font-size: larger;
-    flex-wrap: wrap;
+    font-size: 20px;
+
+ }
+
+ h3 {
+    text-align: center;
+    color: #6610f2;
+    
  }
