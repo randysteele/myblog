@@ -50,15 +50,16 @@ body {
     
  }
 
- a:hover {
+ /* a:hover {
     color: pink;
     font-size: 15px;
     transition: 0.4s ease-in;
- }
+ } */
 
  .card-body {
     padding: 30px;
     margin: 30px;
+    align-items: center;
 
  }
 
@@ -71,6 +72,15 @@ body {
 
  h3 {
     text-align: center;
-    color: #6610f2;
-    
+    color: #6610f2;    
+ }
+ .image {
+    align-self: center;    
+ }
+ #articles {
+    align-items: center;
+ }
+
+ img {
+    align-self: center;
  }
