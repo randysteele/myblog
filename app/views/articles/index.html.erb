@@ -6,8 +6,9 @@
 <div id="articles">
   <% @articles.each do |article| %>
     <%= render article %> 
-    
+   <%= image_tag article.image.url, height: '800', width: '800' %>
    <div><%= link_to "Show this article", article %></div><br>
+
     
   <% end %>
 </div>
