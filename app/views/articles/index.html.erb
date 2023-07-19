@@ -3,15 +3,13 @@
 <h1>All Articles</h1>
 
 
-<div id="articles" id="articles">
-  <%  @articles.each  do |article| %>
-    <%= render article %> 
-   <div><%= link_to "Show this article", article %></div><br>
-
-   
+<div class="articles">
+<%  @articles.each  do |article| %>
+      <%= render article %> 
+      <%= link_to "Show this article", article, class: 'link-to-text-color' %><br>
    </div>
   <% end %>
 
-<%= link_to "New article", new_article_path %>
+<%= link_to "New article", new_article_path, class: 'link-to-text-color' %>
 
 

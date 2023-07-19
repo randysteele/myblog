@@ -1,10 +1,11 @@
 <div id="<%= dom_id article %>">
   <div class="card">
-  <%= image_tag article.image.url %>
+  <%=image_tag article.image.url%>
+  
   <div class="container">    
-    <h2 class=""><%= article.title%></h2>
+    <h2 class=""><%= article.title %></h2>
     <p class=""><%= article.description %></p>
-    Tags: <span class="label info"><%=article.tag_list%></span>
+    <p>Tags:</p> <span class="tag-cloud"><%=article.tag_list%></span>
   </div>
 </div>
 </div>
