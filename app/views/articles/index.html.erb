@@ -6,14 +6,11 @@
 <div id="articles" id="articles">
   <%  @articles.each  do |article| %>
     <%= render article %> 
-   <%= image_tag article.image.url, height: '800', width: '800', align_items: "center"%>
    <div><%= link_to "Show this article", article %></div><br>
 
    
+   </div>
   <% end %>
-</div>
-
-
 
 <%= link_to "New article", new_article_path %>
 
