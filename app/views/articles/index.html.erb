@@ -7,7 +7,8 @@
 <%  @articles.each  do |article| %>
       <%= render article %> 
       <%= link_to "Show this article", article, class: 'link-to-text-color' %><br>
-   </div>
+      <%= link_to "Add Comment", new_article_comment_path(article) %>
+      </div>
   <% end %>
 
 <%= link_to "New article", new_article_path, class: 'link-to-text-color' %>

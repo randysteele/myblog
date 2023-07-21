@@ -1,0 +1,17 @@
+<h2> Add a comment to this article</h2>
+
+<%= form_for([@comment.article,@comment]) do |f| %>
+
+    <% if !@comment.article %>
+    <%= f.label :article %>
+    <%= f.collection_select :recipe_id, Article.all, :id, :title %><br>
+    <% else %>
+    <%= f.hidden_field :article_id %>
+    <% end %>
+    <%= f.label :comment %>
+    <%= f.text_area :comment %><br><br><br>
+
+    <%= f.submit %>
+
+    
+<% end %>

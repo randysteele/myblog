@@ -1,0 +1,13 @@
+<% if @article %>
+  <h1>Comments for <%= @article.title%></h1>
+<% else %>
+  <h1>All Comments</h1>
+<% end %>
+
+<ul>
+<% @comments.each do |c|%>
+  <li><%= c.user.username%> says "<%= c.comment%>" about this article: <strong><%= link_to c.article.title, article_path(c.article_id) %></strong></li>
+  
+<% end %>
+
+</ul>
