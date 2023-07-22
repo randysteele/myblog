@@ -6,8 +6,9 @@
 
 <ul>
 <% @comments.each do |c|%>
-  <li><%= c.user.username%> says "<%= c.comment%>" about this article: <strong><%= link_to c.article.title, article_path(c.article_id) %></strong></li>
+  <li><%= c.user.email%> says "<%= c.comment%>" about this article: <strong><%= link_to c.article.title, article_path(c.article_id) %></strong></li>
   
 <% end %>
 
 </ul>
+
