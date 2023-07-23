@@ -4,7 +4,7 @@ class CommentsController < ApplicationController
 
     def new 
         if params[:article_id] && @article = Article.find_by_id(params[:article_id])
-          @comment = @article.comments.build
+          @comment = @article.comments.new(parent_id: params[:parent_id])
         else
           @comment = Comment.new
         end
