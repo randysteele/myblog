@@ -6,7 +6,7 @@
 
 <ul>
 <% @comments.each do |c|%>
-  <li><%= c.user.email.split('@')[0]%> says "<%= c.comment%>" about this article: <strong><%= link_to c.article.title, article_path(c.article_id) %></strong></li>
+  <li><%= c.user.email.split('@')[0]%> commented "<%= c.comment%>" on this this article: <strong><%= link_to c.article.title, article_path(c.article_id) %></strong></li>
   
 <% end %>
 
