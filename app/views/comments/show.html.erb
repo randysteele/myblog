@@ -1,7 +1,19 @@
-<%= @comment.comment%>  Posted By: <%= @comment.user.username%>  <br>
+<p id="notice"><%= notice %></p>
 
-<%  @comment.user == current_user %> 
-<%= link_to "Edit Comment", edit_comment_path(@comment) %>
+<p>
+  <strong>Description:</strong>
+  <%= @comment.description %>
+</p>
 
+<p>
+  <strong>Article:</strong>
+  <%= @comment.article_id %>
+</p>
 
-<h4> View The Article Here: <%= link_to @comment.article.title,  article_path(@comment.article_id) %></h4>
+<p>
+  <strong>Parent:</strong>
+  <%= @comment.parent_id %>
+</p>
+
+<%= link_to 'Edit', edit_article_comment_path(@comment) %> |
+<%= link_to 'Back', comments_path %>
