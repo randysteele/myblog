@@ -2,6 +2,11 @@
 
 <h1>Comments</h1>
 
+<ul>
+<% @comments.each do |c|%>
+  <li><%= c.user.email%> says "<%= c.comment%>" about this article: <strong><%= link_to c.article.title, article_path(c.article_id) %></strong></li>
+  
+<% end %>
 <table>
   <thead>
     <tr>
@@ -26,4 +31,3 @@
 
 <br>
 
-<%= link_to 'New Comment', new_article_comment_path %>
